@@ -9,7 +9,20 @@
 <body>
     <header>
         <img src="assets/test.png" alt="Icon" width="70" height="70">
-        </header>
+    </header>
+    <div class="image-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/card1.jpg" alt="Card 1" class="uniform-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/card2.jpg" alt="Card 2" class="uniform-image">
+            </div>
+
+            <a class="prev" id="prevSlide" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" id="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
     <main>
         <section>
          
@@ -26,4 +39,3 @@
     <script src="scripts/main.js"></script>
 </body>
 </html>
-</style>

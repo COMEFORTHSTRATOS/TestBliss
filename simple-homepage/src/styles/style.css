@@ -67,7 +67,7 @@ footer:hover {
 
 .mySlides img {
     width: 100vw; /* Make width fill the entire viewport width */
-    height: 70vh; /* Make height fill the entire viewport height */
+    height: 100vh; /* Make height fill the entire viewport height */
     border-radius: 10px;
 }
 

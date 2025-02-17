@@ -8,6 +8,17 @@ header {
     color: white;
     padding: 15px;
     text-align: center;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin-right: 15px;
 }
 
 nav {
@@ -38,13 +49,13 @@ footer {
     width: 100%;
 }
 header {
-    background-color: red;
+    background-color: #f40101;
 }
 
 nav a {
-    color: red;
+    color: #f40101;
 }
 
 footer {
-    background-color: red;
+    background-color: #f40101;
 }   

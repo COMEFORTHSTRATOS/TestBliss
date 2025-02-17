@@ -40,9 +40,15 @@ footer {
     color: white;
     text-align: center;
     padding: 3px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+footer:hover {
+    opacity: 1; /* Fully visible on hover */
 }
 
 .slideshow-container {
@@ -61,7 +67,7 @@ footer {
 
 .mySlides img {
     width: 100vw; /* Make width fill the entire viewport width */
-    height: 80vh; /* Make height fill the entire viewport height */
+    height: 70vh; /* Make height fill the entire viewport height */
     border-radius: 10px;
 }
 
@@ -102,3 +108,15 @@ footer {
 }
 
 
+.mySlides {
+    position: relative;
+}
+.mySlides .text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 5px;
+}

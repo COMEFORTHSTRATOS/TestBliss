@@ -47,3 +47,12 @@ function showPrevSlide() {
     if (slideIndex < 1) {slideIndex = slides.length}    
     slides[slideIndex-1].style.display = "block";  
 }
+
+document.addEventListener('scroll', () => {
+    const footer = document.querySelector('footer');
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.style.opacity = '1';
+    } else {
+        footer.style.opacity = '0';
+    }
+});
